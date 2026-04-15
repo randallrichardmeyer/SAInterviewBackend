@@ -1,0 +1,21 @@
+type Query {
+  home: HomeResponse
+  users: [User]
+  purchase: [Purchase]
+}
+
+type HomeResponse {
+  message: String
+  status: String
+}
+
+type User {
+  id: Int
+  name: String
+  type: String
+}
+
+type Purchase {
+  type: String
+  success: Boolean
+}
